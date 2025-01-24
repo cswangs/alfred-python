@@ -21,6 +21,8 @@ python -m alfred.main multiline_to_comma "line1
 line2
 line3"
 
+python -m alfred.main query_adcode 北京市
+
 ```
 
 ### script filter config
@@ -31,6 +33,8 @@ query=$1
 alfred-python "multiline_to_comma" "$query" "empty"
 ```
 
-
-
 ![1736857035042](image/README/1736857035042.png)
+
+### 示例：
+
+![1738843206798](image/README/1738843206798.png)
