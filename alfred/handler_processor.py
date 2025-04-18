@@ -3,7 +3,7 @@ import inspect
 import pkgutil
 from typing import List, Type
 from alfred.handlers.base import Handler
-from alfred.models.result import AlfredResult
+from alfred.entitys.result import AlfredResult
 from alfred.utils.logger import logger
 
 class HandlerProcessor:

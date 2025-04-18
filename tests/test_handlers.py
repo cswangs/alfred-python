@@ -1,5 +1,5 @@
 import pytest
-from alfred.models.result import AlfredResult
+from alfred.entitys.result import AlfredResult
 from alfred.handlers.implementations.mutiline_to_comma import MutilineToComma
 
 def test_in_condition_handler():

@@ -1,9 +1,10 @@
 ## Overview
 
-A simple Python Alfred workflow template
+A simple Python Alfred workflow tools template
 
 ### Installation
 
+#### step1 
 ```
 pip install -e .
 
@@ -11,8 +12,15 @@ alfred-python multiline_to_comma "line1
 line2
 line3"
 
-
 ```
+#### step2
+
+drop alfred tools.alfredworkflow to alfred work flow
+
+#### step3
+
+change script export path
+
 
 ### Debug
 
@@ -22,6 +30,8 @@ line2
 line3"
 
 python -m alfred.main query_adcode 北京市
+
+python -m alfred.main df '2025 01 01'
 
 ```
 

@@ -1,6 +1,6 @@
 from abc import ABC, abstractmethod
 from typing import List
-from alfred.models.result import AlfredResult
+from alfred.entitys.result import AlfredResult
 
 class Handler(ABC):
     def __init__(self, command: str):

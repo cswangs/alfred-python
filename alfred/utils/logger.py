@@ -16,7 +16,7 @@ class Logger:
             
             # 检查是否是通过 python -m 方式运行
             is_module_run = any(arg.endswith('alfred.main') for arg in sys.argv[0:1])
-            
+            is_module_run = is_module_run or any(arg.endswith('alfred/main.py') for arg in sys.argv[0:1])
             if is_module_run or Config.LOG_ENABLED:
                 logger.setLevel(Config.LOG_LEVEL)
                 console_handler = logging.StreamHandler(sys.stdout)

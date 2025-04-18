@@ -1,5 +1,5 @@
 from typing import List
-from alfred.models.result import AlfredResult
+from alfred.entitys.result import AlfredResult
 from alfred.handlers.base import Handler
 
 

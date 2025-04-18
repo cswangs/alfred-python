@@ -1,9 +1,10 @@
 import sys
 from typing import Optional
-from alfred.models.result import AlfredResult
+from alfred.entitys.result import AlfredResult
 from alfred.handler_processor import HandlerProcessor
 
 from alfred.utils.logger import logger
+
 
 def main() -> None:
     """主函数入口"""
@@ -17,8 +18,9 @@ def main() -> None:
         print(result.to_xml())
     except Exception as e:
         logger.error(f"程序执行出错: {str(e)}", exc_info=True)
-        result = AlfredResult.one("系统错误", str(e), "程序执行出错")
-        print(result.to_xml())
+        # result = AlfredResult.one("系统错误", str(e), "程序执行出错")
+        # print(result.to_xml())
+
 
 if __name__ == "__main__":
-    main() 
+    main()
